@@ -1,0 +1,58 @@
+// variables
+$background-color: #fefff1;
+$background-color--dark: #344466;
+$primary-color: #6d7993;
+$priamry-color--dark: #4d5c7c;
+
+body {
+    background-color: $background-color--dark;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+// BUTTONS
+button {
+    border: none;
+    font-size: 1rem;
+    padding: .4rem .7rem;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: $background-color;
+}
+
+.btn-primary:hover {
+    background-color: $priamry-color--dark;
+}
+
+.lem-auth-login .frame {
+    background-color: $background-color;
+}
+
+@media only screen  and (min-width : 1224px) {
+    .lem-auth-login {
+        width: 1224px;
+    }
+}
+
+@media only screen and (max-width: 1223px) {
+    .lem-auth-login {
+        width: 1024px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .lem-auth-login {
+        width: 768px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .lem-auth-login {
+        width: 100%;
+        grid-template-columns: 1fr 50fr 1fr !important;
+    }
+}
